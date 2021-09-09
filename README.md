@@ -52,7 +52,7 @@ in pom.xml exclude the dependency ~spring-boot-starter-tomcat~
 
 ## Q4 Can we disable the default **web server** in spring boot?
 Answer: **YES**,
-in **application.properties** - ######spring.main.web.application.type = none
+- [x] #739 in ```application.properties``` spring.main.web.application.type = none
 
 
 test
