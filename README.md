@@ -42,7 +42,7 @@ in pom.xml exclude the dependency--
 </dependency>
 <exclusion>
 	<groupId>org.springframework.boot</groupId>
-	~~<artifactId>spring-boot-starter-tomcat</artifactId>~~
+	<artifactId>>~~spring-boot-starter-tomcat>~~</artifactId>
 </exclusion>
 <dependency>
 	<groupId>org.springframework.boot</groupId>
