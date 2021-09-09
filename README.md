@@ -11,7 +11,8 @@ No | Description
 
 ## Q1 What is Spring Boot? Why did you use Spring boot in Project ? Why NOT Spring ?
 
-Ans: * It's Spring Module gives production ready app feature
+Ans: * It's Spring Module gives production ready app feature  
+     * It's used for **RAD** (Rapid Application development)
      * 
 
 
