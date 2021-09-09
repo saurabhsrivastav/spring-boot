@@ -33,17 +33,17 @@ Answer: **YES**, default tomcat server port is 8080,
 in **application.properties** - server.port = 8091
 
 ## Q4 Can we override or replace the embedded **tomcat server** in spring boot?
-Answer: **YES**, 
-in pom.xml exclude the dependency--
+Answer: **YES**,
+in pom.xml exclude the dependency ~spring-boot-starter-tomcat~
 ```java
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-web</artifactId>
 </dependency>
-**<exclusion>
+<exclusion>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId><spring-boot-starter-tomcat></artifactId>
-</exclusion>**
+</exclusion>
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-jetty</artifactId>
