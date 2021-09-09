@@ -51,8 +51,16 @@ in pom.xml exclude the dependency ~spring-boot-starter-tomcat~
 ```
 
 ## Q4 Can we disable the default **web server** in spring boot?
-Answer: **YES**,
-- [x] #739 in ```application.properties``` spring.main.web.application.type = none
+Answer: **YES**, 
+📌 in ***application.properties*** [spring.main.web.application.type = none]
+
+## Q5 How to disable auto-configuration in spring boot?
+Answer: 
+**@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})**  
+OR  
+in **application.properties** spring.autoconfigure.exclude = \org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+
 
 
 test
