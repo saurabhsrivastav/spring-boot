@@ -4,12 +4,12 @@
 
 No | Description
 :-- | :-- |
-1. [What is Spring Boot? Why did you use Spring boot in Project ? Why Not Spring ..?](#Q1:)
-2. [What is RAD](#Q2:)
+1. [What is Spring Boot? Why did you use Spring boot in Project ? Why Not Spring ?](#Q1)
+2. [What is RAD](#Q2)
 3. [Test](#test)
 
 
-## Q1: What is Spring Boot? Why did you use Spring boot in Project ? Why NOT Spring ?
+## Q1 What is Spring Boot? Why did you use Spring boot in Project ? Why NOT Spring ?
 
 Answer:
 * Spring boot is open-source and it's spring module which gives us production ready app feature  
