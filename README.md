@@ -40,10 +40,10 @@ in pom.xml exclude the dependency--
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-web</artifactId>
 </dependency>
-<exclusion>
+**<exclusion>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId><spring-boot-starter-tomcat></artifactId>
-</exclusion>
+</exclusion>**
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-jetty</artifactId>
