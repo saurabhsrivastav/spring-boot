@@ -50,37 +50,53 @@ in pom.xml exclude the dependency ~spring-boot-starter-tomcat~
 </dependency>
 ```
 
-## Q4 Can we disable the default **web server** in spring boot?
+## Q5 Can we disable the default **web server** in spring boot?
 Answer: **YES**, 
 📌 in ***application.properties*** [spring.main.web.application.type = none]
 
-## Q5 How to disable auto-configuration in spring boot?
+## Q6 How to disable auto-configuration in spring boot?
 Answer: 
 **@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})**  
 OR  
-in **application.properties** spring.autoconfigure.exclude = \org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+in **application.properties** 
+- spring.autoconfigure.exclude = \org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
+## Q7 How to use a property defined in application.properties file into your .java class or in controller?
+Answer: 
+**@Value("${custom.value}")**  
+private String customval;
 
+## Q8 Explain @RestController annotation?
+Answer: 
+- @RestController used to create Restful Controller 
+- It adds @Controller + @Responsebody or can save combination of these two annotation
+- It Convert response o JSON/XML
 
+## Q9 Difference between @RestController and @Controller
+Answer:  
 
-test
+@Controller | @RestController
+:-- | :-- |
+@controller map of the model object to view or template and makes it human readable | @RestController returns the object and object data is directly written into HTTP response as JSON/XML  
+
+## Q10 Difference between @GetMapping and @RequestMapping
+Answer:  
+
+@GetMapping | @RequestMapping
+:-- | :-- |
+can be use if knows the request is get only, it help to improve clarity of request | can be used with GET/POST/PUT/DELETE  
+
+## Q11 How to profile your application?
+Answer:  
+in **application.properties** 
+_abc_ 
+<mark> spring.profile.active = dev/test/prod  </mark>
+OR  
+If there are three .properties file for each environment then there should be three .properties file    
+DEV -- properties-dev.properties  
+TEST -- properties-test.properties  
+PROD-- properties-prod.properties  
 
 ## Test 
 
-Testing 2, **Block quotes** _block quotes_
-
-<mark> Highlight </mark>
-
-* Test 1
-* Test 1
-* Test 1
-* Test 1
-* Test 1
-* Test 1
-* Test 1
-
-1. OBJECT 1
-
 **[⬆ Back to Top](#Spring-Boot)**
-
-
