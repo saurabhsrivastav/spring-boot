@@ -35,7 +35,7 @@ in **application.properties** - server.port = 8091
 ## Q4 Can we override or replace the embedded **tomcat server** in spring boot?
 Answer: **YES**, 
 in pom.xml exclude the dependency--
-```
+```java
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-web</artifactId>
