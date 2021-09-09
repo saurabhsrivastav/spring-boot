@@ -30,16 +30,24 @@ Answer: Spring boot modified waterfal model to RAD which focus on developing sof
 
 ## Q3 Is it possible to change the **port** of embedded tomcat server in spring boot?
 Answer: **YES**, default tomcat server port is 8080,
-in **application.properties** - change server.port = 8091
+in **application.properties** - server.port = 8091
 
 ## Q4 Can we override or replace the embedded **tomcat server** in spring boot?
 Answer: **YES**, 
-in pom.xml 
-<mark>
-    <dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter</artifactId>
-	</dependency></mark>
+in pom.xml exclude the dependency--
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<exclusion>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-tomcat</artifactId>
+</exclusion>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-jetty</artifactId>
+</dependency>
 
 
 
