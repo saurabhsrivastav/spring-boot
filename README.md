@@ -14,7 +14,7 @@ No | Description
 Answer:
 * Spring boot is open-source and it's spring module which gives us production ready app feature  
 * It's used for **RAD** (Rapid Application development) build using spring framework with extra support of auto-configuration and embadded application server (tomcat, jetty)  
-* It helps us to create efficient fast stand-alone application which you can just run basicaly removes lots of <ul>configurations</ul> and dependency  
+* It helps us to create efficient fast stand-alone application which you can just run basicaly removes lots of configurations and dependency    
 * We have to concentrate only on business logic, forget about configuration
 
 
